@@ -3,7 +3,7 @@ require('dotenv').config();
 
 async function main() {
 
-  const url = process.env.RINKEBY_URL;
+  const url = process.env.SKALE_URL;
 
   // woah, we just cut out the whole compile.js flow with this!
   let artifacts = await hre.artifacts.readArtifact("Storage");
@@ -16,6 +16,9 @@ async function main() {
 
   // Create an instance of a Storage Factory
   let factory = new ethers.ContractFactory(artifacts.abi, artifacts.bytecode, wallet);
+  
+
+  //let contract = new ethers.Contract(contractAddres,ContractAbi, signer)
 
   let storage = await factory.deploy();
 

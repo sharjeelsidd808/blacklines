@@ -10,28 +10,14 @@ contract Storage {
       uint y1;
       uint y2;
   }
-  event Log(address indexed sender, string message);
 
-  //Line[] allLines;
-  mapping(uint=>Line[]) dataStorage;
+  Line[] allLines;
 
-  function draw(uint canvasId, uint _x1, uint _x2, uint _y1, uint _y2) external{
-    dataStorage[canvasId].push(Line(msg.sender,_x1, _x2, _y1, _y2));
-    //allLines.push(Line(msg.sender,_x1, _x2, _y1, _y2));
-    emit Log(msg.sender, "Drew on the canvas!");
+  function draw(uint _x1, uint _x2, uint _y1, uint _y2) external{
+    allLines.push(Line(msg.sender,_x1, _x2, _y1, _y2));
   }
 
-
-  function returnX1CoordinatesOfCandidate(uint canvasId, uint index)public view returns(uint){
-      return dataStorage[canvasId][index].x1;
-      //return allLines[index].x1;
-  }
-  function returnCandidate(uint canvasId, uint index)public view returns(address){
-      return dataStorage[canvasId][index].addressOfPainter;
-      //return allLines[index].drawer;
-  }
-  function returnStruct(uint canvasId, uint index)public view returns(Line memory){
-      return dataStorage[canvasId][index];
-      //return allLines[index];
+  function returnStruct(uint index)public view returns(Line memory){
+      return allLines[index];
   }
 }

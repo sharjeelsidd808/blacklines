@@ -8,5 +8,10 @@ module.exports = {
       url: process.env.RINKEBY_URL,
       accounts: [process.env.PRIVATE_KEY]
     },
+    skale: {
+      url: process.env.SKALE_URL,
+      accounts: [process.env.PRIVATE_KEY]
+    },
   }
 };
+
