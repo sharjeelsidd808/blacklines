@@ -1,0 +1,37 @@
+.tool-tip {
+  position: fixed;
+  background-color: #0a2540;
+  width: 25rem;
+  z-index: 3;
+  border-radius: .35rem;
+  cursor: default;
+}
+
+.tooltip-section {
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 206, 72, .2);
+}
+
+.tooltip-section:last-of-type {
+  margin: 0;
+  border: none;
+}
+
+.wallet {
+  font-size: 1.4rem;
+  color: #ffffff;
+  white-space: nowrap;
+  font-weight: bold;
+  border-left: 1px solid #ffce48;
+  color: #ffce48;
+  padding-left: 1rem;
+  line-height: 1.4rem;
+  margin-bottom: .25rem;
+}
+
+.date {
+  color: #EEE;
+  font-size: 1.3rem;
+  line-height: 1.4rem;
+}

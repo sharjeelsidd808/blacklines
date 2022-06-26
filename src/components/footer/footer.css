@@ -1,0 +1,21 @@
+.footer {
+  display: flex;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.right a {
+  margin-left: 2rem;
+}
+
+.left a {
+  font-size: 1.4rem;
+  margin-left: .5rem;
+  color: #212121;
+}

@@ -1,0 +1,54 @@
+.profile {
+  width: 100%;
+}
+
+.profile-canvas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.profile-metadata {
+  display: flex;
+  flex-direction: column;
+  height: calc(min(500px, 100vw));
+  width: calc(min(500px, 100vw));
+  margin: 0 2rem;
+}
+
+.profile-metadata h1 {
+  margin: 2rem;
+  font-size: 4rem;
+  color: #0a2540;
+  line-height: 6rem;
+  border-bottom: .5rem solid #1f80e1;
+}
+
+.profile-metadata p,
+.profile-metadata b {
+  margin: .5rem 0;
+  line-height: 2.1rem;
+  font-size: 1.6rem;
+  color: #425466;
+  margin: 0 1rem;
+}
+
+.profile-metadata button {
+  margin: 2rem;
+  background-color: #2081e2;
+  height: 5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 5rem;
+}
+
+.profile-metadata button img {
+  height: 3rem;
+  margin-left: 1rem
+}

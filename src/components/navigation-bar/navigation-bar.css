@@ -1,0 +1,110 @@
+.navigation-bar {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-items: center;
+}
+
+.user-detail {
+  display: flex;
+  flex-direction: row;
+}
+
+.user-meta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1rem;
+}
+
+.user-meta h1,
+p {
+  line-height: 1.8rem;
+  font-size: 1.4rem;
+}
+
+.avatar {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 100%;
+  overflow: hidden;
+  border: .5rem solid #FFF;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 20px 0px;
+}
+
+.logo {
+  height: 7rem;
+}
+
+.routes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.routes>a {
+  padding: 0.5rem .75rem;
+  margin: 0 1rem;
+  min-width: 12rem;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #202020;
+  transition: 0.2s ease-in-out;
+  border-radius: .25rem;
+}
+
+.routes>a:hover {
+  background-color: rgba(125, 125, 125, .075);
+}
+
+.navigation-bar-logged-in {
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.menu-button {
+  display: none;
+}
+
+@media screen and (max-width: 825px) {
+
+  .routes,
+  .wallet-connect,
+  .user-detail {
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  .navigation-bar-logged-in {
+    width: 20rem;
+  }
+}
+
+.heartbeat {
+  animation: blink-1 0.6s both;
+}
+
+@keyframes blink-1 {
+
+  0%,
+  40%,
+  100% {
+    color: #202020;
+  }
+
+  20%,
+  80% {
+    color: #9966ff;
+  }
+}

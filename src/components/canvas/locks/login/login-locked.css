@@ -1,0 +1,23 @@
+.login-locked {
+  position: relative;
+  width: min(500px, calc(100vw - 20px));
+  height: min(500px, calc(100vw - 20px));
+}
+
+button.login-locked-button {
+  position: absolute;
+  bottom: 4rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #fab000;
+  color: #fff;
+  font-weight: 800;
+  width: max-content;
+  box-shadow: 10px 10px 120px -5px rgba(50, 50, 93, .25), 0 8px 16px -8px rgba(0, 0, 0, .3);
+}
+
+button.login-locked-button:hover {
+  background-color: #ff7600;
+  color: #fff;
+}

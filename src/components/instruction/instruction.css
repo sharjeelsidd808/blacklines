@@ -1,0 +1,25 @@
+.instruction {
+  border: 1px dashed #15be53;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  width: 30rem;
+  font-size: Poppins, sans-serif;
+  border-radius: .5rem;
+  cursor: default;
+}
+
+.instruction p,
+.instruction h1 {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  margin: .6rem 0;
+}
+
+.instruction h1 {
+  color: #127536;
+}
+
+.instruction p {
+  color: #15be53;
+  font-weight: 600;
+}

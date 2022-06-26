@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Poppins, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f6f9fc;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.content-container {
+  width: min(120rem, calc(100% - 8rem));
+  margin: auto;
+}
+
+@font-face {
+  font-family: Poppins;
+  font-weight: 300;
+  src: url('/public/fonts/Poppins-Light.ttf');
+}
+
+@font-face {
+  font-family: Poppins;
+  font-weight: 500;
+  src: url('/public/fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+  font-family: Poppins;
+  font-weight: 600;
+  src: url('/public/fonts/Poppins-Medium.ttf');
+}
+
+@font-face {
+  font-family: Poppins;
+  font-weight: 800;
+  src: url('/public/fonts/Poppins-Bold.ttf');
+}
+
+button {
+  background-color: #121212;
+  border: none;
+  padding: 1rem;
+  color: #EEE;
+  font-size: 1rem;
+  font-family: Poppins;
+  font-weight: 500;
+  border-radius: .4rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+}
+
+button>img {
+  margin-left: .5rem;
+  height: 1.5rem;
+}
+
+button:hover {
+  background-color: #3a3a3a;
+}
+
+
+button.secondary {
+  color: #202020;
+  background-color: #FFF;
+}
+
+
+.fade-in {
+  animation: fade-in 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scale-in {
+  0% {
+    transform: scale(.85);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,55 @@
+.connect-wallet-call-to-actions {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+.wallet-button {
+  padding: .75rem 2rem;
+  font-size: 1.3rem;
+  align-items: center;
+  margin: .5rem 0;
+}
+
+.wallet-button img {
+  height: 2.5rem;
+  margin-left: 1rem;
+}
+
+.scale-in {
+  animation: scale-in 0.25s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes scale-in {
+  0% {
+    transform: scale(.85);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.login-loader {
+  margin-top: 2rem;
+}
+
+.login-loader>img {
+  height: 2rem;
+  animation: rotate 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+p.error {
+  color: red;
+  font-weight: 600;
+}

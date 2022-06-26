@@ -1,0 +1,58 @@
+.table {
+  position: relative;
+  width: 100%;
+  overflow-x: clip;
+  padding: 10rem 0;
+}
+
+.table * {
+  font-size: 1.4rem;
+  font-family: Poppins, sans-serif;
+}
+
+.table::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -25%;
+  width: 150%;
+  height: 80%;
+  background-color: #0a2540;
+  transform: rotate(-5deg);
+  z-index: -1;
+}
+
+.actual-table {
+  display: block;
+  border-radius: .5rem .5rem 0 0;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px
+}
+
+.actual-table>div[role=heading]>div {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.header,
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+thead {
+  background-color: #ff8284;
+  color: #ffffff;
+}
+
+
+thead th,
+td {
+  padding: 1.5rem .5rem;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+tr>td:nth-of-type(2) {
+  text-align: start;
+}

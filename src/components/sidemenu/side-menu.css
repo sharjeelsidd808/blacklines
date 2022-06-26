@@ -1,0 +1,62 @@
+.side-menu {
+  position: fixed;
+  z-index: 100;
+  height: 100vh;
+  right: 0;
+  top: 0;
+  transition: .3s ease;
+  min-width: 0rem;
+  max-width: 0rem;
+  background-color: #212121;
+  overflow: hidden;
+}
+
+.maintain-width {
+  position: absolute;
+  width: 30rem;
+}
+
+.close-button {
+  padding: 1rem 2rem;
+  filter: invert(1);
+}
+
+.side-menu-open {
+  min-width: 30rem;
+  max-width: 30rem;
+  background-color: #212121;
+}
+
+.side-menu-open .wallet-connect {
+  margin: 2rem auto;
+  display: block;
+  width: calc(100% - 4rem);
+  background-color: #fab000;
+}
+
+.side-menu-open .user-detail {
+  margin: 2rem auto;
+  width: calc(100% - 4rem);
+  color: #fab000;
+  display: flex !important;
+}
+
+.side-menu-open .sidebar-routes {
+  display: flex;
+  flex-direction: column;
+}
+
+.link {
+  color: #FFF;
+  padding: 2rem;
+  text-decoration: none;
+}
+
+.link:hover {
+  background-color: rgba(255, 255, 255, .2);
+}
+
+.sidebar-routes a {
+  text-decoration: none;
+  ;
+}

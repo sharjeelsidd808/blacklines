@@ -1,0 +1,64 @@
+.time-locked-parent {
+  display: grid;
+  place-items: center;
+}
+
+.time-locked {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: min(500px, calc(100vw - 20px));
+  height: min(500px, calc(100vw - 20px));
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 4rem;
+  box-shadow: 0 50px 100px -20px rgba(50, 50, 93, .25),
+    0 30px 60px -30px rgba(0, 0, 0, .3),
+    inset 0 -2px 6px 0 rgba(10, 37, 64, .35);
+}
+
+.completed-at-info {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.completed-at-info b,
+.completed-at-info p {
+  font-size: 1.5rem;
+}
+
+.completed-at-info h2 {
+  font-size: 3rem;
+}
+
+.time-locked>p,
+.time-locked>p>b {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.time-locked>h2 {
+  margin: 2rem 0;
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+.time-locked-call-to-actions {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1.5rem;
+}
+
+.time-locked-call-to-actions>a {
+  margin: 1rem 1.25rem;
+}
+
+.time-locked-call-to-actions>a>img {
+  height: 2rem;
+}
