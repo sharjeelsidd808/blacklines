@@ -1,0 +1,61 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true,
+        "jest": true
+    },
+    "extends": [
+        "airbnb-base",
+        "eslint:recommended"
+    ],
+    "rules": {
+        "semi": "off",
+        "no-multi-spaces": [
+            "error",
+            {
+                "exceptions": {
+                    "VariableDeclarator": true
+                }
+            }
+        ],
+        "import/no-dynamic-require": "off",
+        "no-underscore-dangle": [
+            "off"
+        ],
+        "key-spacing": [
+            "error",
+            {
+                "singleLine": {
+                    "beforeColon": false,
+                    "afterColon": true
+                },
+                "multiLine": {
+                    "align": "colon"
+                }
+            }
+        ],
+        "no-restricted-syntax": [
+            "error",
+            "ForInStatement"
+        ],
+        "comma-dangle": [
+            "error",
+            {
+                "functions": "ignore"
+            }
+        ],
+        "indent": [
+            2,
+            4,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "class-methods-use-this": "off",
+        "no-continue": "warn"
+    },
+    "parserOptions": {
+        "ecmaVersion": 2020
+    }
+}

@@ -1,0 +1,6 @@
+node_modules
+.env.*
+src/utils/config/local.js
+.firebase/*
+data/*
+!data/.gitkeep
